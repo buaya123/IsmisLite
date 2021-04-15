@@ -1,0 +1,4 @@
+indexVid.mp4 = https://www.youtube.com/watch?v=nl4FcIc3mE4
+about1.jpg = anypic you want
+//this is v1 dependecies
+npm install @material-ui/core/styles react-grid-system react-parallax
