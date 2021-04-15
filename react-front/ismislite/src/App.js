@@ -1,31 +1,23 @@
-import Landing from './modules/Landing';
-import './App.css';
-import Navbar from './components/Navbar';
-import About from './components/About';
+import React from 'react'
+import Vid from './VideoIndex.js'
+import About1 from './About1.js'
+import Navbar from './components/Navbar'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-function App() {
+const App = () => {
+  
   return (
-    <Router>
-    <div className="App">
-      <Navbar/>
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/about" component={About} />
-      </Switch>
-      <Landing />
-    </div>
-    </Router>
-  );
-}
-
-const Home = () => {
-  return (
-    <div>
-      <h1>Home</h1>
-    </div>
+      <Router>
+      <div>
+        <Switch>
+          {/* <Route path="/" exact component={} /> */}
+        </Switch>
+        <Navbar/>
+        <Vid />
+        <About1 />
+      </div>
+      </Router>
   )
 }
 
-
-export default App;
+export default App
